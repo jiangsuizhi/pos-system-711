@@ -6,7 +6,7 @@ CFLAGS = -Wall -I./include
 LDFLAGS = 
 
 # 目标可执行文件
-TARGET = bin/demo
+TARGET = bin/pos
 
 # 源文件列表：src下所有.c
 SRCS = $(wildcard src/*.c)
@@ -26,7 +26,8 @@ obj/%.o: src/%.c
 
 # 清理编译产物
 clean:
-	rm -rf obj bin
+	rm -rf obj/*.o bin/*exe  src/*.o  src/*.exe
+
 
 # 伪目标，防止和文件重名
 .PHONY: all clean
