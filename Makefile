@@ -1,7 +1,7 @@
 # 编译器
 CC = gcc
 # 编译选项：开启警告 + 头文件路径
-CFLAGS = -Wall -I./include
+CFLAGS = -Wall -g -I./include
 # 链接选项
 LDFLAGS = 
 
