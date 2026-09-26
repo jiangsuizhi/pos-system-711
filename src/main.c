@@ -404,6 +404,7 @@ int main(void)
             handle_token(token);
             token = strtok(NULL, " ");
         }
+        
     }
     return 0;
 }
